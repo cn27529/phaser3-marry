@@ -13,10 +13,8 @@ module.exports = {
   //mode: process.env.NODE_ENV, //值為'production'則會自動壓縮檔案
   //context: path.resolve(__dirname, './src'), //設定起始資料夾
   entry: {
-    index: './src2/index.js',
-
+    index: './src2/index.js', //bundle的進入點
   },
-  //bundle的進入點
 
   output: {
     path: path.resolve(__dirname, 'dist'), //打包後放置的資料夾
@@ -40,7 +38,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'myapp',
+      title: 'myapp', //page title
       //filename: 'index.html',
       //template: './index.html' //指定HTML模板的位置
     }),
